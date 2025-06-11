@@ -13,10 +13,12 @@ body {
 .page_header {
     background-image: url(images/Desktop\ -\ 1.png);
     width: 1900px;
-    min-height: 1024px;
+    min-height: 900px;
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
     min-height: 80px;
     padding-top: 47px;
     padding-left: 122px;
@@ -49,12 +51,6 @@ body {
     color: #fff;
 
 }
-.page_header_text {
-    padding-top: 164px;
-    width: 412px;
-    height: 264px;
-    padding-left: 115px;
-}
 .header_text {
     color:#fff;
     font-size: 150px;
@@ -63,10 +59,9 @@ body {
     font-family: Kenia;
 }
 .page_header_description {
-    padding-top: 175px;
-    padding-left: 122px;
     width: 290px;
     height: 63px;
+    padding-top: 165px;
 }
 .header_description {
     color:#fff;
@@ -74,4 +69,113 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;
+}
+.header_content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.text-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 115px;
+    padding-top: 119px;
+}
+.iphone {
+    position: relative;
+    display: block;
+    padding-right: 75px;
+    padding-top: 27px;
+    z-index: 2;
+    
+}
+.iphone_container {
+    position: relative;
+    display: inline-block;
+    
+}
+.cable {
+    opacity: 0;
+    position: absolute;
+    bottom: -500px;
+    left: 81.5%;
+    transform: translateX(-50%);
+    width: 350px;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+.headphones {
+    opacity: 0;
+    position: absolute;
+    bottom: -150px;   
+    left: 45%;
+    transform: translateX(-50%);
+    width: 760px;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+.iphone-container:hover .cable {
+    opacity: 1;
+    display: block;
+    bottom: -324px;
+}
+.iphone-container:hover ~ .headphones {
+    opacity: 1;
+}
+.music {
+    position: relative;
+}
+.page_music {
+    width: 1900px;
+    min-height: 900px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(213,48,5);    
+    z-index: 11;
+}
+.music_title {
+    padding-top: 83px;
+    padding-left: 122px;
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+}
+.music_content {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    padding-left: 122px;
+    padding-top: 385px;
+    width: 382px;
+}
+.listen_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 382px;
+    height: 83px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: -4px -4px 30px 0px rgba(255, 255, 255, 0.1),4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(2087.07% 134.42% at 2% 8%,rgb(177, 62, 24),rgb(243, 80, 26) 100%);
+    font-family: "Karla";
+    color:#fff;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+.music_image {
+    width: 1000px;
+    height: 666px;
+    display: block; 
+    margin-left: auto;
+    padding-top: 179px;
+    pointer-events: none;
 }
