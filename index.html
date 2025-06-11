@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kenia&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Karla:wght@200..800&family=Kenia&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="page_header" id="header">
         <nav class="navigation">
             <a href="./">
-                <img src="images/MP.png" class="logo">
+                <img src="images/MP.png" class="logo" alt="Logo">
             </a>
-        <ul class="navigation_list">
-            <li>
-                <a href="#header" class="page_header_title">HOME</a>
-            </li>
-             <li>
-                <a href="#music" class="page_header_title">MUSIC</a>
-            </li>
-             <li>
-                <a href="#" class="page_header_title">ABOUT</a>
-            </li>
-             <li>
-                <a href="#" class="page_header_title">STORE</a>
-            </li>
-        </ul>
-         </nav>
+            <div class="burger-menu">☰</div>
+            <ul class="navigation_list">
+                <li><a href="#header" class="page_header_title">HOME</a></li>
+                <li><a href="#music" class="page_header_title">MUSIC</a></li>
+                <li><a href="#about" class="page_header_title">ABOUT</a></li>
+                <li><a href="#store" class="page_header_title">STORE</a></li>
+            </ul>
+        </nav>
         <div class="header_content">
-        <div class="text-block">
-            <div class="page_header_text">
-                <p class="header_text">MUSIC</p>
-                <p class="header_text">PLAYER</p>
+            <div class="text-block">
+                <div class="page_header_text">
+                    <p class="header_text">MUSIC</p>
+                    <p class="header_text">PLAYER</p>
+                </div>
+                <div class="page_header_description">
+                    <p class="header_description">American company formed in 2002 in Boston, Massachusetts</p>
+                </div>
             </div>
-        <div class="page_header_description">
-            <p class="header_description">Amperican company formed in 2002 in Boston, Massachusetts</p>
+            <div class="iphone-container">
+                <img src="images/iphone.png" class="iphone" alt="iPhone">
+                <img src="images/cabel.png" class="cable" alt="Cable">
+            </div>
+            <img src="images/headphones.png" class="headphones" alt="Headphones">
         </div>
-        </div>
-        <div class="iphone-container">
-            <img src="images/iphone.png" class="iphone">
-            <img src="images/cabel.png"  class="cable">
-        </div>
-        <img src="images/headphones.png" class="headphones">
-        </div>
-        
-       
     </header>
-    <music class="page_music" id="music">
+
+    <section class="page_music" id="music">
         <div class="music_title">
             <p>Music</p>
         </div>
@@ -58,7 +48,73 @@
             <a href="#" class="listen_button">Listen now</a>
             <a href="#" class="listen_button">Find a song...</a>
         </div>
-        <img src="images/seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png" class="music_image">
-    </music>
+        <img src="images/seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png" class="music_image" alt="Music">
+    </section>
+
+    <section class="page_about" id="about">
+        <p class="text_about">About</p>
+        <div class="text_page_about">
+            <p class="text_about2">MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.</p>
+        </div>
+    </section>
+
+    <section class="page_store" id="store">
+        <div class="left_store">
+            <div class="store_title">
+                <p class="store_title_text">Store</p>
+            </div>
+            <div class="store_buttons">
+                <a href="#" class="store_button_download">Download Windows x64</a>
+                <a href="#" class="store_button_download2">Download <br>MacOS</a>
+            </div>
+            <div class="page_store_text_block">
+                <p class="page_store_text">Нужна предыдущая версия MPlayer?</p>
+                <p class="page_store_text_2">Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией операционной системы и определёнными устройствами. <br>Выберите предыдущую версию MPlayer</p>
+            </div>
+        </div>
+        <div class="macbook">
+            <img src="images/Device - Macbook Pro.png" class="macbook_image" alt="Macbook">
+        </div>
+    </section>
+
+    <footer class="page_footer">
+        <div class="page_footer_links">
+            <div class="page_footer_links1">
+                <p class="page_footer_links1_title">MPlayer Store</p>
+                <a href="#" class="page_footer_links1_link">Варианты оплаты</a>
+                <a href="#" class="page_footer_links1_link">Состояние заказа</a>
+                <a href="#" class="page_footer_links1_link">Помощь при покупке</a>
+            </div>
+            <div class="page_footer_links2">
+                <p class="page_footer_links1_title">Ценности MPlayer</p>
+                <a href="#" class="page_footer_links1_link">Универсальный доступ</a>
+                <a href="#" class="page_footer_links1_link">Окружающая среда</a>
+                <a href="#" class="page_footer_links1_link">Конфиденциальность</a>
+            </div>
+            <div class="page_footer_links3">
+                <p class="page_footer_links1_title">Учётная запись</p>
+                <a href="#" class="page_footer_links1_link">Управление вашим MPlayer ID</a>
+                <a href="#" class="page_footer_links1_link">Учетная запись MPlayer Store</a>
+            </div>
+        </div>
+        <div class="page_footer_bottom_links">
+            <div class="footer_logo">
+                <p class="footer_logo_text">MUSIC <br>PLAYER</p>
+                <p class="copyright">&copy; MPlayer Inc., 2022г. Все права защищены.</p>
+            </div>
+            <div class="footer_bottom_links_text">
+                <a href="#" class="footer_bottom_link">Условия использования</a>
+                <a href="#" class="footer_bottom_link">Продажа и возврат</a>
+                <a href="#" class="footer_bottom_link">Юридическая информация</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            const navList = document.querySelector('.navigation_list');
+            navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 </body>
 </html>
